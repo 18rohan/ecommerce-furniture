@@ -1,0 +1,30 @@
+.SmallCard {
+    width:30%;
+    min-height:300px;
+    /* padding:1em; */
+    background-color: #f3f3f3;
+    border-radius: 0.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:1em;
+
+    
+
+}
+.image-container {
+    width:100%;
+    min-height: 80%;
+    max-height:80%;
+    
+    padding:1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.smallCard-image {
+    width:90%;
+
+
+}
