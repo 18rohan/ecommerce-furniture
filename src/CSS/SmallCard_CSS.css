@@ -1,6 +1,6 @@
 .SmallCard {
     width:30%;
-    min-height:300px;
+    min-height:400px;
     /* padding:1em; */
     background-color: #f3f3f3;
     border-radius: 0.2em;
@@ -8,9 +8,24 @@
     flex-direction: column;
     justify-content: center;
     margin:1em;
+    padding-bottom:0.5em;
+}
+.content {
+    background-color:transparent;
+}
 
+
+.product-info {
+    background-color: transparent;
+    color:#333333;
+    font-family: sans-serif;
+    width:100%;
     
-
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1em;
 }
 .image-container {
     width:100%;

@@ -21,7 +21,7 @@ export class Navbar extends Component {
                     </div>
                     <div className="icon-tray">
                     <p><div><Link to ="/home" >Home</Link></div></p>
-                    <p><div><a href="#" >Shop</a></div></p>
+                    <p><div><Link to ="/shop" >Shop</Link></div></p>
                     <p><div><Link to ="/login" >Login</Link></div></p>
                     
                     

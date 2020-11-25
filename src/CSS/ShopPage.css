@@ -1,0 +1,26 @@
+.Shop {
+    padding:0.5em;
+    
+    background-color: white;
+    
+    justify-content: center;
+    align-items: center;
+    margin:0em 4em 0em 4em;
+    /* border:1px solid; */
+    
+}
+.category-heading {
+    display: flex;
+    width:30%;
+    /* border-bottom:1px solid; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top:4em;
+    padding-left:2em;
+    /* margin-bottom:3em; */
+    color:#333333;
+    font-size:2em;
+    text-transform: capitalize;
+    text-shadow: black;
+
+}

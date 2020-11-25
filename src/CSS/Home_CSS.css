@@ -5,7 +5,8 @@
     
     justify-content: center;
     align-items: center;
-    margin:2em;
+    margin:0em 4em 0em 4em;
+    /* border:1px solid; */
     
 }
 .intro-section {

@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-furnature-dev-144057-authRole",
+      "UnauthRoleArn": "arn:aws:iam::089769225978:role/amplify-furnature-dev-144057-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::089769225978:role/amplify-furnature-dev-144057-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-furnature-dev-144057-deployment",
+      "UnauthRoleName": "amplify-furnature-dev-144057-unauthRole",
+      "StackName": "amplify-furnature-dev-144057",
+      "StackId": "arn:aws:cloudformation:ap-south-1:089769225978:stack/amplify-furnature-dev-144057/251cd6f0-2efe-11eb-926a-06224c9a318c",
+      "AmplifyAppId": "d1px52ya9rbw9z"
+    }
+  }
+}
