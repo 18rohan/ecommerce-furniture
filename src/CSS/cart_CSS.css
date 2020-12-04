@@ -1,0 +1,33 @@
+.cartPage {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    margin-top:10em;
+    
+}
+
+.cart-box{
+    background-color: white;
+    width:100%;
+    /* border:1px solid; */
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 2fr;
+    
+    
+}
+
+.product {
+    border:1px solid;
+}
+.container {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    /* border:1px solid; */
+    margin:2em;
+}
+
+.cart-total {
+    background-color: #f3f3f3;
+}

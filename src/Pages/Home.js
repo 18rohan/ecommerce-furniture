@@ -7,7 +7,7 @@ import SmallCard from '../Components/smallCard';
 
 
 // import dummy data 
-import {homeObjOne, homeObjTwo, homeObjThree} from './Home_data';
+import {homeObjOne, homeObjTwo, homeObjThree} from './ShopPage_data';
 
 
 export default class Home extends Component {

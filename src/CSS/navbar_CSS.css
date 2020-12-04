@@ -1,14 +1,21 @@
 .navbar {
     background-color: white;
     /* border-radius:0.7em; */
+    /* display: flex; */
+    /* flex-direction: row; */
     width: 100%;
     position: fixed;
+    z-index: 1;
+    /* max-height:20vh; */
+
+    /* border-bottom: 5px solid #333333; */
 }
 .row {
     display:flex;
     flex-direction: row;
 
 }
+
 .nav-row {
     display: flex;
     justify-content: space-between;
@@ -17,10 +24,19 @@
 }
 .logo-container {
     width:20%;
+
+}
+.logo-container h2 {
+    /* font-family: 'Montserrat Subrayada', sans-serif; */
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 100;
+    font-size:2em;
+    
 }
 .icon-tray {
     display: grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(5,1fr);
     justify-content: center;
     align-items: center;
     
@@ -29,8 +45,26 @@
     
 }
 .icon-tray a {
-    font-family: sans-serif;
-    color: black;
+    font-family: 'Pathway Gothic One', sans-serif;
+    
+    color: #333333;
+    font-weight: bold;
     text-decoration: none;
-    font-size:1.2em;
+    /* font-size:1.3em; */
+}
+.icon-tray p{
+    font-family: 'Pathway Gothic One', sans-serif;
+    
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    font-size:1.3em;
+    cursor: pointer;
+    color:orangered;
+}
+.icon-tray p:hover {
+    text-decoration: underline;
+}
+.icon-tray a:hover {
+    text-decoration: underline;
 }

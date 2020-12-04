@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
-    useRouteMatch,
-    useParams
   } from "react-router-dom";
-  
-
+//   import DropdownButton from 'react-bootstrap/DropdownButton'
+//   import Dropdown from 'react-bootstrap/Dropdown'
+import {FiShoppingCart} from 'react-icons/fi';
+import {ImLeaf} from 'react-icons/im';
+import {auth} from '../firebase/firebaseUtils';
 // import CSS
 import "../CSS/navbar_CSS.css";
 export class Navbar extends Component {
@@ -17,12 +15,22 @@ export class Navbar extends Component {
             <div className="navbar">
                 <div className="row nav-row">
                     <div className="logo-container">
-                        <h1><span style={{fontSize:60}}>🍀</span>Furnature</h1>
+                        <h2><ImLeaf/>Furnature</h2>
                     </div>
                     <div className="icon-tray">
-                    <p><div><Link to ="/home" >Home</Link></div></p>
-                    <p><div><Link to ="/shop" >Shop</Link></div></p>
-                    <p><div><Link to ="/login" >Login</Link></div></p>
+                    <div><p><Link to ="/home" >HOME</Link></p></div>
+                    <div><p><Link to ="/shop" >SHOP</Link></p></div>
+                    {
+                        this.props.currentUser ?
+                        (
+                            <div onClick={()=>{auth.signOut()}}><p>LOGOUT</p></div>        
+                        ):
+                        (
+                            <div><p><Link to ="/login" >LOGIN</Link></p></div>
+                        )
+                    }
+                    
+                    <div><p><Link to ="/cart" ><FiShoppingCart size={35}/></Link></p></div>
                     
                     
                     </div>
@@ -33,3 +41,5 @@ export class Navbar extends Component {
 }
 
 export default Navbar
+
+
