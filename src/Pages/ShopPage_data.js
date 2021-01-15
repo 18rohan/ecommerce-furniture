@@ -69,31 +69,31 @@ export const SHOP_DATA = [
         {
           id: 2,
           name: 'Modern Black',
-          imageUrl: 'images/chair3.png',
+          imageUrl: 'images/chair11.jpg',
           price: 280
         },
         {
           id: 3,
           name: 'Bright Orange',
-          imageUrl: 'images/chair3.png',
+          imageUrl: 'images/chair12.jpg',
           price: 110
         },
         {
           id: 4,
           name: 'White Chair',
-          imageUrl: 'images/chair3.png',
+          imageUrl: 'images/chair13.jpg',
           price: 160
         },
         {
           id: 5,
           name: 'Super black',
-          imageUrl: 'images/chair3.png',
+          imageUrl: 'images/chair14.jpg',
           price: 160
         },
         {
           id: 6,
           name: 'Baby pink chair',
-          imageUrl: 'images/chair6.png',
+          imageUrl: 'images/chair15.jpg',
           price: 160
         },
        
@@ -107,19 +107,19 @@ export const SHOP_DATA = [
         {
           id: 1,
           name: 'Oakwood Table',
-          imageUrl: 'images/table1.png',
+          imageUrl: 'images/table_1.jpg',
           price: 125
         },
         {
           id: 2,
           name: 'Brown Cabinet',
-          imageUrl: 'images/table2.png',
+          imageUrl: 'images/table_2.jpg',
           price: 90
         },
         {
           id: 3,
           name: 'Black Table',
-          imageUrl: 'images/table3.png',
+          imageUrl: 'images/table_3.jpg',
           price: 90
         },
        
@@ -133,37 +133,37 @@ export const SHOP_DATA = [
         {
           id: 1,
           name: 'Blue Tanktop',
-          imageUrl: 'images/vase6.png',
+          imageUrl: 'images/lamp.jpg',
           price: 25
         },
         {
           id: 2,
           name: 'Floral Blouse',
-          imageUrl: 'images/vase1.png',
+          imageUrl: 'images/lamp2.jpg',
           price: 20
         },
         {
           id: 3,
           name: 'Floral Dress',
-          imageUrl: 'images/vase2.png',
+          imageUrl: 'images/lamp3.jpg',
           price: 80
         },
         {
           id: 4,
           name: 'Red Dots Dress',
-          imageUrl: 'images/vase3.png',
+          imageUrl: 'images/lamp4.jpg',
           price: 80
         },
         {
           id: 5,
           name: 'Striped Sweater',
-          imageUrl: 'images/vase4.png',
+          imageUrl: 'images/lamp6.jpg',
           price: 45
         },
         {
           id: 6,
           name: 'Yellow Track Suit',
-          imageUrl: 'images/vase5.png',
+          imageUrl: 'images/lamp5.jpg',
           price: 135
         },
        

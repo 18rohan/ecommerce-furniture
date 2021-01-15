@@ -115,9 +115,13 @@ export class Signin extends Component {
           />
         </div>
         <div className="column button-column">
+        <Link to="/home">
           <button className="button" onClick={this.handleloginSubmit}>
             LOGIN
           </button>
+          </Link>
+
+          
           <Link to="/home">
             <button className="button google" onClick={signInWithGoogle}>
               <FcGoogle color="white" size={30} />

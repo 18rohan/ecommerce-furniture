@@ -13,10 +13,10 @@
   justify-content: center;
   align-items: center;
   max-width: 70%;
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   margin: 1em;
   border-radius: 1em;
-  /* border:1px solid; */
+  border:0px solid;
   /* scale: -1; */
 }
 .description {
@@ -54,6 +54,7 @@
 }
 .price p {
   color: green;
+  font-size:1em;
 }
 .total p {
   color:green;

@@ -4,16 +4,13 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from "react-router-dom";
 
 
 // Firebase Config files
 import {auth, createUserProfileDocument} from './firebase/firebaseUtils';
-
-
-
-
 
 // Importing Components
 import Home from './Pages/Home';
@@ -21,23 +18,27 @@ import Navbar from './Components/navbar';
 import LoginPage from './Pages/LoginPage';
 import Shop from './Pages/ShopPage';
 import Cart from './Pages/Cart';
-
-import { connect } from 'react-redux';
 import { Unsubscribe } from '@material-ui/icons';
 
 
-const App = () => {
-  const [currentUser, setCurrentUser] = useState(null);
+// REDUX
+import { connect } from 'react-redux';
+import setCurrentUser from './redux/Users/userActions';
+
+
+const App = (props) => {
+  // const [currentUser, setCurrentUser] = useState(null);
   let unsubscribeFromAuth = null;
+  const {setCurrentUser} = props;
   useEffect(()=>{
     unsubscribeFromAuth =  auth.onAuthStateChanged(async userAuth =>{
       if(userAuth){
         const userRef = await createUserProfileDocument(userAuth);
         userRef.onSnapshot((snapshot)=>{
-          setCurrentUser({currentUser:{
+          setCurrentUser({
             id:snapshot.id,
             ...snapshot.data()
-          }})
+          })
           // console.log("SNAPSHOT DATA: ",snapshot.data());
           
         })
@@ -55,14 +56,14 @@ const App = () => {
 
   },[]);
 
-  useEffect(()=>{console.log(currentUser)});
+  // useEffect(()=>{console.log(state.wishlist)});
   
 
   return (
     
     <div className="App">
     
-    <Navbar currentUser={currentUser}/>
+    <Navbar />
     
     <Switch>
     
@@ -78,4 +79,15 @@ const App = () => {
   );
 }
 
-export default App;
+const mapStateToProps = ({user}) =>({
+  currentUser: user.currentUser
+  
+})
+
+
+
+const mapDispatchToProps = dispatch =>({
+  setCurrentUser: user => dispatch(setCurrentUser(user))
+})
+
+export default connect(null, mapDispatchToProps)(App);

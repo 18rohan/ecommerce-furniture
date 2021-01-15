@@ -1,5 +1,6 @@
 .SmallCard {
-    width:30%;
+    width:50%;
+    min-width:50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -96,19 +97,41 @@
     margin-right: auto;
     background-color: white;
     object-fit: cover;
-    aspect-ratio: 16/9;
+    
+}
+.action-buttons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: space-around; */
+    /* border:1px solid red; */
 }
 
 .price  {
     font-family: 'Pathway Gothic One', sans-serif; 
     font-size:1em;
     color:green;
+    margin-left:0.2em;
+    width:100%;
+    font-size:1.5rem;
+    font-weight: bold;
+    
 }
 .price p {
     font-weight: bold;
     color:green;
-    font-size:1.2em;
+    font-size:2em;
+    
 }
 .icon-rupee {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
     margin-right:0.5rem;
+    /* border:1px solid; */
+}
+.product-head h1 {
+    font-family: 'Pathway Gothic One', sans-serif; 
+    font-size: 1.5em;
 }

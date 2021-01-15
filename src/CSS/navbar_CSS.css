@@ -54,7 +54,7 @@
 }
 .icon-tray p{
     font-family: 'Pathway Gothic One', sans-serif;
-    
+    /* border:1px solid; */
     color: #333333;
     font-weight: bold;
     text-decoration: none;
@@ -67,4 +67,31 @@
 }
 .icon-tray a:hover {
     text-decoration: underline;
+}
+.cart-icon {
+    display: flex;
+/* max-width:10%; */
+/* max-height:10px; */
+/* margin-left:10%; */
+    /* width:5%; */
+    /* border:1px solid; */
+    width:100%;
+    min-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.cart-icon span {
+    display: flex;
+    
+    font-size: 0.8em;
+    color:orangered;
+    margin:1em;
+    margin-left:1.2em;
+    position: absolute;
+}
+.cart-image {
+    width:60px;
+    height:64px;
 }

@@ -2,15 +2,21 @@ import React, { Component } from 'react'
 import {
     Link,
   } from "react-router-dom";
-//   import DropdownButton from 'react-bootstrap/DropdownButton'
-//   import Dropdown from 'react-bootstrap/Dropdown'
+
+//   import ICONS
 import {FiShoppingCart} from 'react-icons/fi';
 import {ImLeaf} from 'react-icons/im';
+import {ReactComponent as ShoppingIcon} from '../images/truck.svg';
+// FIREBASE
 import {auth} from '../firebase/firebaseUtils';
+
+// REDUX
+import {connect} from 'react-redux';
+
 // import CSS
 import "../CSS/navbar_CSS.css";
-export class Navbar extends Component {
-    render() {
+const Navbar = (props) => {
+    
         return (
             <div className="navbar">
                 <div className="row nav-row">
@@ -21,7 +27,7 @@ export class Navbar extends Component {
                     <div><p><Link to ="/home" >HOME</Link></p></div>
                     <div><p><Link to ="/shop" >SHOP</Link></p></div>
                     {
-                        this.props.currentUser ?
+                        props.currentUser ?
                         (
                             <div onClick={()=>{auth.signOut()}}><p>LOGOUT</p></div>        
                         ):
@@ -30,7 +36,8 @@ export class Navbar extends Component {
                         )
                     }
                     
-                    <div><p><Link to ="/cart" ><FiShoppingCart size={35}/></Link></p></div>
+                    <div className="cart-icon"><p><Link to ="/cart" ><span style={{fontSize:"20", color:'darkgreen'}}>9</span><ShoppingIcon className="cart-image" /></Link></p></div>
+                    
                     
                     
                     </div>
@@ -38,8 +45,12 @@ export class Navbar extends Component {
             </div>
         )
     }
-}
 
-export default Navbar
+
+const mapStateToProps = (state) =>({
+    currentUser:state.user.currentUser
+});
+
+export default connect(mapStateToProps)(Navbar);
 
 

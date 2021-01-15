@@ -35,15 +35,13 @@
 .item-list {
     display: flex;
     width:100%;
-    max-width: 95%;
-    /* padding:2em 2em 2em 2em; */
+    min-width: 80%;
+    /* border:1px solid; */
     padding-top:3em;
     padding-left:2em;
-    /* padding-right:2em; */
     padding-bottom: 3em;
-    border-radius: 2em;
+    /* border-radius: 2em; */
     background-color: #f3f3f3;
-    /* padding:2em 2em 2em; */
     flex-direction: row;
     flex-wrap: wrap;
     margin-top:1em;

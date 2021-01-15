@@ -9,7 +9,7 @@ export class HeroSection extends Component {
             <p>Furniture for every space in your house</p>
             </div>
             
-        <img src="images/chair2.png" alt="chair" className="hero-image"/>
+        <img src="images/greyChair1.png" alt="chair" className="hero-image"/>
             
                 
             </div>
